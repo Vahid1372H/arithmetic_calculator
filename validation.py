@@ -1,10 +1,10 @@
-def is_float(number:str) -> bool:
+def is_float(number: str) -> bool:
     try:
         float(number)
         return True
     except:
         return False
-    
+
 
 if __name__ == "__main__":
     print("test of is_float: ")
