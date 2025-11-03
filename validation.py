@@ -10,3 +10,11 @@ if __name__ == "__main__":
     print("test of is_float: ")
     print(f"True mode (number = 12.5): {is_float("12.5")}")
     print(f"False mode (number = 12q5): {is_float("12q5")}")
+
+
+def is_operator(operator: str) -> bool:
+    try:
+        operator.isnumeric() or operator.isalpha()
+        return False
+    except:
+        return True
