@@ -2,16 +2,16 @@ from validation import is_float
 
 
 def get_float_number(prompt: str = "Enter a float number: ") -> float:
-    """_summary_
+    """get flost number from users
 
     Args:
-        prompt (_type_, optional): _description_. Defaults to "Enter a float number: ".
+        prompt (float, user): checking that is number float or no? . Defaults to "Enter a float number: ".
 
     Raises:
-        TypeError: _description_
+        TypeError: The type of number that we want should be str.
 
     Returns:
-        float: _description_
+        float: return float number and type of number that means str.
     """
     if not isinstance(prompt, str):
         raise TypeError("The prompt argument type should be 'str'.")
