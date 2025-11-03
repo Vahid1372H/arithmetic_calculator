@@ -13,8 +13,12 @@ if __name__ == "__main__":
 
 
 def is_operator(operator: str) -> bool:
-    try:
-        operator.isnumeric() or operator.isalpha()
-        return False
-    except:
+    if not operator.isnumeric() or operator.isalpha():
         return True
+    return False
+
+
+if __name__ == "__main__":
+    print("test of is_operator: ")
+    print(f"True mode (operator = *): {is_operator("*")}")
+    print(f"False mode (operator = 1@): {is_operator("@")}")
