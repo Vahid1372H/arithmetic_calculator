@@ -1,16 +1,15 @@
 from validation import is_operator
 
 
-def get_operator(operator: str = "Enter an operator: ") -> str:
-    operators = {"-", "+", "*", "/", "//", "**","%"}
-    if not operator in operators :
-        return False
-    return True
+def get_operator(prompt: str = "Enter an operator: ") -> str:
+    if not isinstance(prompt, str):
+        raise TypeError("The prompt argument type should be 'str'.")
+
+    while True:
+        prompt = input(prompt)
+        if is_operator(prompt):
+            return str(prompt)
+        else:
+            print(f"Error: {prompt} is invalid.")
 
 
-while True:
-    operators = input(operators)
-    if is_operator(operators):
-        print(operators)
-    else:
-        print(f"Error: {operators} is invalid.")
