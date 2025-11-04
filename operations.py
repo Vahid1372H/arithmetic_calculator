@@ -13,3 +13,7 @@ def get_operator(prompt: str = "Enter an operator: ") -> str:
             print(f"Error: {prompt} is invalid.")
 
 
+if __name__ == "__main__":
+    print("test: get_operator function")
+    operator = get_operator()
+    print(f"{operator}: {type(operator)}")
