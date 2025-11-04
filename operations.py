@@ -2,6 +2,7 @@ from validation import is_operator
 
 
 def get_operator(prompt: str = "Enter an operator: ") -> str:
+    prompt = {"-", "+", "*", "/", "//", "**","%"}
     if not prompt.isalnum() or not prompt.isalpha():
         return True
     return False
