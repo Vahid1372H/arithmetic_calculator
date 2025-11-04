@@ -1,11 +1,11 @@
 from validation import is_operator
 
 
-def get_operator(prompt: str = "Enter an operator: ") -> str:
-    prompt = {"-", "+", "*", "/", "//", "**","%"}
-    if not prompt.isalnum() or not prompt.isalpha():
-        return True
-    return False
+def get_operator(operator: str = "Enter an operator: ") -> str:
+    operators = {"-", "+", "*", "/", "//", "**","%"}
+    if not operator in operators :
+        return False
+    return True
 
 
 while True:
