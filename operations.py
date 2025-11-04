@@ -7,9 +7,6 @@ def get_operator(prompt: str = "Enter an operator: ") -> str:
     return False
 
 
-    # if not isinstance(prompt, str):
-    #     raise TypeError("The prompt argument type should be 'str'.")
-
 while True:
     prompt = input(prompt)
     if is_operator(prompt):
