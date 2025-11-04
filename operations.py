@@ -9,8 +9,8 @@ def get_operator(operator: str = "Enter an operator: ") -> str:
 
 
 while True:
-    prompt = input(prompt)
-    if is_operator(prompt):
-        print(prompt)
+    operators = input(operators)
+    if is_operator(operators):
+        print(operators)
     else:
-        print(f"Error: {prompt} is invalid.")
+        print(f"Error: {operators} is invalid.")
