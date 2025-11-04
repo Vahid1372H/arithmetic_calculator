@@ -3,12 +3,14 @@ from operations import get_operator
 
 
 def get_float_number():
-    user1 = input("Enter your number: ")
-    user2 = input("Enter your number: ")
-    if not user1.isnumeric() or user2.isnumeric():
-        return True
-    return False
-    
+    user1 = input("Enter your float_number1: ")
+    user2 = input("Enter your float_number2: ")
+    try:
+        float(user1) or float(user2)
+    except:
+        return False
+    print(get_float_number(user1,user2))
+
 def addition():
     pass  
 
