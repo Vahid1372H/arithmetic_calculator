@@ -13,9 +13,10 @@ if __name__ == "__main__":
 
 
 def is_operator(operator: str) -> bool:
-    if not operator.isnumeric() or operator.isalpha():
-        return True
-    return False
+    operators = {"-", "+", "*", "/", "//", "**","%"}
+    if not operator in operators :
+        return False
+    return True
 
 
 if __name__ == "__main__":
