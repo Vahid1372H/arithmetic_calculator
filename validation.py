@@ -21,4 +21,4 @@ def is_operator(operator: str) -> bool:
 if __name__ == "__main__":
     print("test of is_operator: ")
     print(f"True mode (operator = *): {is_operator("*")}")
-    print(f"False mode (operator = 1@): {is_operator("@")}")
+    print(f"False mode (operator = 1@): {is_operator("1")}")
