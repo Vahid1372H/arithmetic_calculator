@@ -11,7 +11,6 @@ def get_float_number():
     return True
 
 
-
 def addition():
     pass  
 
