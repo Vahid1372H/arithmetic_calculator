@@ -1,11 +1,11 @@
 def is_float(number: str) -> bool:
-    """_summary_
+    """define is_float function for type of number
 
     Args:
-        number (str): _description_
+        number (str): number should be float
 
     Returns:
-        bool: _description_
+        bool: output of validation is True or False
     """
     try:
         float(number)
