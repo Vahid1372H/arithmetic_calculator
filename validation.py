@@ -1,4 +1,12 @@
 def is_float(number: str) -> bool:
+    """_summary_
+
+    Args:
+        number (str): _description_
+
+    Returns:
+        bool: _description_
+    """
     try:
         float(number)
         return True
@@ -13,6 +21,14 @@ if __name__ == "__main__":
 
 
 def is_operator(operator: str) -> bool:
+    """validation of is_operator function
+
+    Args:
+        operator (str): operator is string type
+
+    Returns:
+        bool: output of validation is True or False
+    """
     operators = {"-", "+", "*", "/", "//", "**","%"}
     if not operator in operators :
         return False
