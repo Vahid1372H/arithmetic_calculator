@@ -16,7 +16,7 @@ def addition():
     number_2 = get_float_number() 
     s = number_1 + number_2
     print(s)
-
+print(get_float_number())
 
 def subtraction():
     pass
