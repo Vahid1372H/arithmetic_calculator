@@ -2,7 +2,7 @@ from validation import is_operator
 
 
 def get_operator(prompt: str = "Enter an operator: ") -> str:
-    """_summary_
+    """get operators and print it. our output is str
 
     Args:
         prompt (_type_, optional): our prompt shoould be string type. Defaults to "Enter an operator: ".
