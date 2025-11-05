@@ -12,9 +12,11 @@ def get_operator() -> str:
 
 def get_float_number(prompt: str) -> float:
     user_input = input(prompt)
-    if user_input is float:
+    try:
         return float(user_input)
-    raise ValueError
+    except:
+        raise ValueError("Invalid operator!")
+
 
 
 def addition(a,b):
@@ -61,7 +63,7 @@ def main():
         "%": modulus,
         "**": power,
     }
-    result = addition(number_1, number_2, user_operator,user_operators)
+    result = user_operators[user_operator](number_1, number_2)
     print(result)
 
 
