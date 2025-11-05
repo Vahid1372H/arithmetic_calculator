@@ -3,8 +3,8 @@ from operations import get_operator
 
 
 def get_operator():
-    user_operator= input("Enter your operator: ")
     operators = {"-", "+", "*", "/", "//", "**","%"}
+    user_operator= input("Enter your operator: ")
     if not user_operator in operators :
         return False
     return True
@@ -21,10 +21,7 @@ def get_float_number():
 def addition():
     number_1 = input("Enter your num1: ")
     number_2 = input("Enter your num2: ")
-    s = number_1 + number_2
-    print(s)
-print(get_float_number())
-print(get_operator("+"))
+    return number_1 + number_2
 
 def subtraction():
     pass
@@ -55,12 +52,20 @@ def power():
 
 
 def main():
-    number_1 = input("Enter your num1: ")
-    number_2 = input("Enter your num2: ")
-    user_operator= input("Enter your operator: ")
-    s = number_1 + number_2
-    print(s)
-    print(user_operator)
+    number_1 = get_float_number("Enter your num_1: ")
+    number_2 = get_float_number("Enter your num_2: ")
+    user_operator = get_operator()
+    user_operators = {
+        "+": addition,
+        "-": subtraction,
+        "*": multiplication,
+        "/": division,
+        "//": division_floor,
+        "%": modulus,
+        "**": power,
+    }
+    result = addition(number_1, number_2, user_operator,user_operators)
+    print(result)
 
 
 if __name__ == "__main__":
