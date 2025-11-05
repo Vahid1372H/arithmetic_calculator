@@ -7,7 +7,7 @@ def get_operator():
     user_operator= input("Enter your operator: ")
     if not user_operator in operators :
         return False
-    return True
+    return user_operator
 
 
 def get_float_number():
@@ -15,13 +15,11 @@ def get_float_number():
     user2 = input("Enter your float_number2: ")
     if user1.isalpha() or user2.isalpha():
         return False 
-    return True
+    return user1,user2
 
 
-def addition():
-    number_1 = input("Enter your num1: ")
-    number_2 = input("Enter your num2: ")
-    return number_1 + number_2
+def addition(a,b):
+    return a + b
 
 def subtraction():
     pass
