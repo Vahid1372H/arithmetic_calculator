@@ -56,8 +56,11 @@ def power():
 
 
 def main():
-    pass
-
+    number_1 = get_float_number()
+    number_2 = get_float_number() 
+    s = number_1 + number_2
+    print(s)
+print(get_float_number())
 
 if __name__ == "__main__":
     main()
