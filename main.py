@@ -23,7 +23,8 @@ def addition():
     number_2 = input("Enter your num2: ")
     s = number_1 + number_2
     print(s)
-print(get_float_number())
+print(get_float_number("2.3 + 4.5"))
+print(get_operator("+"))
 
 def subtraction():
     pass
