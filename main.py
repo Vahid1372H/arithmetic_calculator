@@ -2,6 +2,13 @@ from iostream import get_float_number
 from operations import get_operator
 
 
+def get_operator():
+    user_operator= input("Enter your float_number1: ")
+    operators = {"-", "+", "*", "/", "//", "**","%"}
+    if not user_operator in operators :
+        return False
+    return True
+
 
 def get_float_number():
     user1 = input("Enter your float_number1: ")
@@ -46,21 +53,14 @@ def power():
 
 
 
-
-
-
-
-
-
-
-
-
 def main():
     number_1 = input("Enter your num1: ")
     number_2 = input("Enter your num2: ")
+    operator = get_operator() 
     s = number_1 + number_2
     print(s)
 print(get_float_number())
+print(get_operator())
 
 if __name__ == "__main__":
     main()
