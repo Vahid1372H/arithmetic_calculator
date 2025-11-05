@@ -56,8 +56,8 @@ def power():
 
 
 def main():
-    number_1 = get_float_number()
-    number_2 = get_float_number() 
+    number_1 = float(number_1)
+    number_2 = float(number_2)
     s = number_1 + number_2
     print(s)
 print(get_float_number())
