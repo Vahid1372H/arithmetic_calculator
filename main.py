@@ -10,12 +10,11 @@ def get_operator():
     return user_operator
 
 
-def get_float_number():
-    user1 = input("Enter your float_number1: ")
-    user2 = input("Enter your float_number2: ")
-    if user1.isalpha() or user2.isalpha():
-        return False 
-    return user1,user2
+def get_float_number(prompt: str) -> float:
+    user_input = input(prompt)
+    if user_input is float:
+        return user_input
+    raise ValueError
 
 
 def addition(a,b):
@@ -62,7 +61,7 @@ def main():
         "%": modulus,
         "**": power,
     }
-    result = addition(number_1, number_2, user_operator,user_operators)
+    result = (number_1, number_2, user_operator,user_operators)
     print(result)
 
 
