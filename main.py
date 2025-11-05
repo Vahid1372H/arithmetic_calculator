@@ -3,7 +3,7 @@ from operations import get_operator
 
 
 def get_operator():
-    user_operator= input("Enter your float_number1: ")
+    user_operator= input("Enter your operator: ")
     operators = {"-", "+", "*", "/", "//", "**","%"}
     if not user_operator in operators :
         return False
@@ -56,11 +56,11 @@ def power():
 def main():
     number_1 = input("Enter your num1: ")
     number_2 = input("Enter your num2: ")
-    operator = get_operator() 
+    user_operator= input("Enter your operator: ")
     s = number_1 + number_2
     print(s)
-print(get_float_number())
-print(get_operator())
+    print(user_operator)
+
 
 if __name__ == "__main__":
     main()
