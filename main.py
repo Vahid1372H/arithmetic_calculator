@@ -50,8 +50,8 @@ def power():
 
 
 def main():
-    number_1 = get_float_number("Enter your num_1: ")
-    number_2 = get_float_number("Enter your num_2: ")
+    number_1 = get_float_number()
+    number_2 = get_float_number()
     user_operator = get_operator()
     user_operators = {
         "+": addition,
