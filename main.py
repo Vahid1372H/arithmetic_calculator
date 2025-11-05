@@ -12,8 +12,8 @@ def get_float_number():
 
 
 def addition():
-    number_1 = float(number_1)
-    number_2 = float(number_2) 
+    number_1 = input("Enter your user1")
+    number_2 = input("Enter your user2")
     s = number_1 + number_2
     print(s)
 print(get_float_number())
@@ -56,8 +56,8 @@ def power():
 
 
 def main():
-    number_1 = float(number_1)
-    number_2 = float(number_2)
+    number_1 = input("Enter your user1")
+    number_2 = input("Enter your user2")
     s = number_1 + number_2
     print(s)
 print(get_float_number())
