@@ -2,7 +2,7 @@ from iostream import get_float_number
 from operations import get_operator
 
 
-def get_operator():
+def get_operator() -> str:
     operators = {"-", "+", "*", "/", "//", "**","%"}
     user_operator= input("Enter your operator: ")
     if not user_operator in operators :
@@ -13,35 +13,35 @@ def get_operator():
 def get_float_number(prompt: str) -> float:
     user_input = input(prompt)
     if user_input is float:
-        return user_input
+        return float(user_input)
     raise ValueError
 
 
 def addition(a,b):
     return a + b
 
-def subtraction():
-    pass
+def subtraction(a,b):
+    return a - b
 
 
-def multiplication():
-    pass
+def multiplication(a,b):
+    return a * b
 
 
-def division():
-    pass
+def division(a,b):
+    return a / b
 
 
-def division_floor():
-    pass
+def division_floor(a,b):
+    return a // b
 
 
-def modulus():
-    pass
+def modulus(a,b):
+    return a % b
 
 
-def power():
-    pass
+def power(a,b):
+    return a ** b
 
 
 
@@ -49,8 +49,8 @@ def power():
 
 
 def main():
-    number_1 = get_float_number()
-    number_2 = get_float_number()
+    number_1 = get_float_number("Enter your first number: ")
+    number_2 = get_float_number("Enter your second number: ")
     user_operator = get_operator()
     user_operators = {
         "+": addition,
@@ -61,7 +61,7 @@ def main():
         "%": modulus,
         "**": power,
     }
-    result = (number_1, number_2, user_operator,user_operators)
+    result = addition(number_1, number_2, user_operator,user_operators)
     print(result)
 
 
