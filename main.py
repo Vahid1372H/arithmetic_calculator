@@ -6,7 +6,7 @@ from operations import get_operator
 def get_float_number():
     user1 = input("Enter your float_number1: ")
     user2 = input("Enter your float_number2: ")
-    if user1.isnumeric() or user2.isnumeric():
+    if user1.isalpha() or user2.isalpha():
         return False 
     return True
 
