@@ -12,7 +12,10 @@ def get_float_number():
 
 
 def addition():
-    pass  
+    number_1 = get_float_number()
+    number_2 = get_float_number() 
+    s = number_1 + number_2
+    print(s)
 
 
 def subtraction():
